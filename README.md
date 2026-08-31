@@ -1,20 +1,18 @@
 <div align="center">
 
-  <!-- Animasi Lambaian Tangan -->
-  <img src="https://raw.githubusercontent.com/Martin36/Martin36/main/wave.gif" width="120px" alt="Waving Hand"><br>
-  
-  <!-- Teks Mengetik dengan Latar Belakang Hitam Pekat (#0D1117 & Teks Putih) -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&background=0D111700&width=500&height=50&lines=Hi+there!+%F0%9F%91%8B;I'm+Satria+Dawas+Zhalifunas" alt="Typing SVG" />
+  <img src="https://raw.githubusercontent.com/Martin36/Martin36/main/wave.gif" width="130px" alt="Waving Hello">
 
-  <p><b>Informatics Educator | IT Support & Admin | Operational & PPIC Enthusiast</b></p>
+  <br>
+
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&background=0D111700&width=500&height=50&lines=Hi+there!+%F0%9F%91%8B;I'm+Satria+Dawas+Zhalifunas;Informatics+Educator;IT+Support+%26+Admin;Operational+%26+PPIC+Enthusiast" alt="Typing SVG" />
+
   <p>Based in Karawang, Indonesia 🇮🇩</p>
 
-  ---
+  <br>
 
-  <!-- Tombol Badge Serba Hitam / Dark Style -->
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-  [![Email](https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:email@example.com)
-  [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](#-featured-portfolios)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:email@example.com)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-24292E?style=for-the-badge&logo=github&logoColor=white)](#-featured-portfolios)
 
 </div>
 
@@ -33,17 +31,14 @@
 ## 🛠️ Tech Stack & Skills
 
 <p align="left">
-  <!-- IT & Systems -->
   <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/Hardware_Troubleshooting-4A154B?style=flat-square" />
   <img src="https://img.shields.io/badge/Networking_Basics-00599C?style=flat-square" />
   <br>
-  <!-- Productivity & Office -->
   <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white" />
   <img src="https://img.shields.io/badge/Microsoft_Word-2B579A?style=flat-square&logo=microsoft-word&logoColor=white" />
   <img src="https://img.shields.io/badge/Google_Workspace-4285F4?style=flat-square&logo=google&logoColor=white" />
   <br>
-  <!-- Design & Methods -->
   <img src="https://img.shields.io/badge/Graphic_Design-FF6F00?style=flat-square&logo=canva&logoColor=white" />
   <img src="https://img.shields.io/badge/CS_Unplugged-8E44AD?style=flat-square" />
   <img src="https://img.shields.io/badge/PPIC_%26_Procurement-27AE60?style=flat-square" />
@@ -100,12 +95,4 @@
 ## 📈 GitHub Overview
 
 <div align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight"/>
-</div>
-
----
-
-<div align="center">
-  <sub>Designed with ❤️ by Satria Dawas Zhalifunas</sub>
-</div>
+  <img height="160em" src="
