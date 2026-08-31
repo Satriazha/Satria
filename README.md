@@ -1,16 +1,19 @@
 <div align="center">
 
-  <!-- Animasi Lambaian Tangan & Teks Mengetik -->
+  <!-- Animasi Lambaian Tangan -->
   <img src="https://raw.githubusercontent.com/Martin36/Martin36/main/wave.gif" width="120px" alt="Waving Hand"><br>
   
+  <!-- Teks Mengetik dengan Latar Belakang Hitam Pekat (#0D1117 & Teks Putih) -->
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&background=0D111700&width=500&height=50&lines=Hi+there!+%F0%9F%91%8B;I'm+Satria+Dawas+Zhalifunas" alt="Typing SVG" />
+
   <p><b>Informatics Educator | IT Support & Admin | Operational & PPIC Enthusiast</b></p>
   <p>Based in Karawang, Indonesia 🇮🇩</p>
 
   ---
 
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:email@example.com)
+  <!-- Tombol Badge Serba Hitam / Dark Style -->
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+  [![Email](https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:email@example.com)
   [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](#-featured-portfolios)
 
 </div>
