@@ -1,10 +1,12 @@
 <div align="center">
 
-  # Hi there, I'm Satria Dawas Zhalifunas 👋
+  <!-- Animasi Lambaian Tangan & Teks Mengetik -->
+  <img src="https://raw.githubusercontent.com/Martin36/Martin36/main/wave.gif" width="120px" alt="Waving Hand"><br>
   
-  **Informatics Educator | IT Support & Admin | Operational & PPIC Enthusiast**
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=F7F7F7&center=true&vCenter=true&width=500&height=50&lines=Hi+there!+%F0%9F%91%8B;I'm+Satria+Dawas+Zhalifunas" alt="Typing SVG" />
 
-  Based in Karawang, Indonesia 🇮🇩
+  <p><b>Informatics Educator | IT Support & Admin | Operational & PPIC Enthusiast</b></p>
+  <p>Based in Karawang, Indonesia 🇮🇩</p>
 
   ---
 
