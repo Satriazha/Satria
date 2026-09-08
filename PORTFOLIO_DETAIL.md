@@ -1,7 +1,7 @@
 # 📊 Production Planning & Inventory Control (PPIC) System
 
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
+![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)](https://docs.google.com/spreadsheets/d/1ERnV8Ca7ATY6Hnu9KP61MdtEeoql83kdCMFCgRajjNY/edit?usp=sharing)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![Focus](https://img.shields.io/badge/Focus-Supply%20Chain%20%26%20MRP-blue?style=for-the-badge)
 
