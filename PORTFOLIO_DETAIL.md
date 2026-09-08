@@ -72,24 +72,17 @@ Mengajarkan Informatika kepada siswa Sekolah Dasar (Fase A dan Fase C) membutuhk
 Dalam lingkungan kerja administrasi skala besar (seperti di BPN Karawang via agency tata.id), validasi dokumen dan pengarsipan yang tepat merupakan kunci keamanan dan kepatuhan hukum (*legal compliance*).
 
 ### 2. Workflow & Standar Operasional Prosedur (SOP)
-```
-```mermaid
-graph LR
-    A["📥 1. Penerimaan"] --> B["🔍 2. Pemeriksaan"]
-    B --> C{"⚡ Lolos QC?"}
-    C -- Ya --> D["💻 3. Input Digital"]
-    C -- Tidak --> E["⚠️ Retur / Revisi"]
-    D --> F["🏷️ 4. Pengkodean & Barcode"]
-    F --> G["📁 5. Pengarsipan"]
 
-    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style B fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style C fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style D fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style E fill:#ffebee,stroke:#d32f2f,stroke-width:2px
-    style F fill:#e0f2f1,stroke:#00796b,stroke-width:2px
-    style G fill:#eceff1,stroke:#455a64,stroke-width:2px
-```
+| Tahap | Aktivitas Utama | Deskripsi & Target | Media / Tool |
+| :---: | :--- | :--- | :--- |
+| **01** | **📥 Penerimaan Berkas** | Penyerahan fisik berkas & pencatatan registrasi awal | Logbook / Google Sheets |
+| **02** | **🔍 Verifikasi & Validasi** | Pemeriksaan keabsahan stempel, tanda tangan & data legal | Checklist SOP Validasi |
+| **03** | **💻 Input Data Digital** | Merekam meta-data dokumen ke dalam basis data | Aplikasi BPN / Excel |
+| **04** | **🏷️ Pengkodean & Barcode** | Penempelan label identifikasi unik/barcode pada folder | Printer Barcode & Label |
+| **05** | **📁 Pengarsipan Ganda** | Penyimpanan fisik (Warkah) & backup data ke cloud | Rak Arsip & Cloud Storage |
+
+> **⚠️ Alur Penanganan Kendala (Retur/Revisi):** 
+> Apabila pada **Tahap 02** berkas dinyatakan *tidak lengkap*, berkas akan dikembalikan ke pemohon beserta lembar *Checklist Kekurangan* untuk dilengkapi terlebih dahulu sebelum masuk ke **Tahap 03**.
 
 ### 3. Key Achievements & Best Practices
 * **Peningkatan Efisiensi Pengarsipan:** Mengimplementasikan penataan kode indeks yang sistematis sehingga waktu pencarian berkas (*retrieval time*) berkurang dari 15 menit menjadi kurang dari 3 menit.
