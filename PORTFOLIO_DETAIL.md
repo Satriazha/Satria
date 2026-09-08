@@ -1,94 +1,50 @@
-# 📁 Detailed Portfolio Case Studies
+# 📊 Case Study: Production Planning & Inventory Control (PPIC) System
 
-Selamat datang di repositori studi kasus dan portofolio detail saya! Dokumen ini memuat dokumentasi komprehensif dari tiga bidang keahlian utama saya: **Operasional PPIC & Supply Chain**, **Pendidikan Informatika & CS Unplugged**, serta **Administrasi & Validasi Dokumen**.
+## 📌 Project Overview
+Sistem perencanaan produksi dan pengendalian inventaris terpadu (*Production Planning and Inventory Control System*) berbasis spreadsheet yang dirancang untuk mengoptimalkan kebutuhan bahan baku, mencegah *stockout* pada lini perakitan, serta mengendalikan biaya pemesanan (*Purchase Order*).
 
----
-
-## 📌 Daftar Isi
-1. [Studi Kasus 1: Production Planning & Inventory Control (PPIC)](#-studi-kasus-1-production-planning--inventory-control-ppic)
-2. [Studi Kasus 2: Paket Kurikulum & Modul Ajar TIK Sekolah Dasar](#-studi-kasus-2-paket-kurikulum--modul-ajar-tik-sekolah-dasar)
-3. [Studi Kasus 3: Operasional Administrasi & Validasi Berkas](#-studi-kasus-3-operasional-administrasi--validasi-berkas)
-4. [Ringkasan Ringkas & Kontak](#-ringkasan-ringkas--kontak)
+* **Model Manufaktur:** Perakitan Router / Modem Internet (Router X-100)
+* **Lead Time Default Supplier:** 7 Hari (Sesuai kebijakan pengadaan)
+* **Safety Stock Target:** 100 Pcs / Komponen
+* **Model Perencanaan:** Master Production Schedule (MPS) & Material Requirement Planning (MRP)
 
 ---
 
-## 📊 Studi Kasus 1: Production Planning & Inventory Control (PPIC)
+## 🛠️ Data Master Bill of Materials (BOM)
 
-### 1. Overview & Latar Belakang
-Pada industri manufaktur modern, ketidakseimbangan antara ketersediaan bahan baku (*raw material*) dan jadwal produksi sering menyebabkan *bottleneck* serta biaya penyimpanan (*holding cost*) yang membengkak. Studi kasus ini mensimulasikan sistem pengendalian inventaris dan perencanaan produksi terpadu.
+Tabel di bawah ini merupakan basis data resep produksi (*Master BOM*) yang mencatat stok awal, mutasi harian, serta stok akhir riil di gudang[cite: 1]:
 
-### 2. Tantangan Utama
-* **Stockout vs Overstock:** Fluktuasi permintaan pasar yang menyebabkan risiko kekurangan bahan baku saat proses perakitan.
-* **Accuracy Tracking:** Ketidaksesuaian antara jumlah stok di sistem digital dengan kondisi riil di gudang.
-* **Procurement Lead Time:** Keterlambatan pengiriman bahan baku dari vendor yang berdampak pada *master production schedule* (MPS).
-
-### 3. Solusi & Metodologi
-1. **Demand Forecasting & Safety Stock:**
-   * Menggunakan metode *Exponential Smoothing* untuk memprediksi kebutuhan bahan baku selama 3 bulan ke depan.
-   * Menghitung nilai **Safety Stock (SS)** dan **Reorder Point (ROP)** menggunakan formula:
-     $$	ext{ROP} = (	ext{Daily Usage} 	imes 	ext{Lead Time}) + 	ext{Safety Stock}$$
-2. **Material Requirements Planning (MRP):**
-   * Menyusun Bill of Materials (BOM) multi-level untuk melacak komponen hingga tingkat terkecil.
-   * Menerapkan *Lot-for-Lot (L4L)* dan *Economic Order Quantity (EOQ)* untuk menentukan ukuran pesanan yang efisien.
-3. **Stock Ledger & Audit Trail:**
-   * Membangun formulir penerimaan/pengeluaran barang yang terintegrasi dengan rumus perkalian otomatis (`VLOOKUP`, `SUMIFS`, `INDEX-MATCH`) pada Excel untuk memperbarui stok secara real-time.
-
-### 4. Hasil & Dampak Operasional
-| Parameter | Sebelum Optimasi | Setelah Optimasi | Peningkatan |
-| :--- | :--- | :--- | :--- |
-| **Akurasi Stok Gudang** | 82% | 98.5% | **+16.5%** |
-| **Kejadian Stockout** | 4-5x / bulan | < 1x / bulan | **Penerunan 80%** |
-| **Lead Time Pengadaan** | 7 hari | 4 hari | **Lebih Cepat 42%** |
+| Kode Material | Nama Material | Qty / Unit | Stok Awal | Satuan | Harga / Unit (Rp) | Lead Time | Barang Masuk | Barang Keluar | Stok Akhir |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **MAT-01** | Casing Plastik Top/Bottom | 1 | 500 | Pcs | *(Custom)* | 7 Hari | 0 | 0 | **500** |
+| **MAT-02** | Main PCB Board | 1 | 350 | Pcs | *(Custom)* | 7 Hari | 0 | 0 | **350** |
+| **MAT-03** | Antena Wi-Fi 5GHz | 2 | 800 | Pcs | *(Custom)* | 7 Hari | 0 | 0 | **800** |
+| **MAT-04** | Power Adapter 12V | 1 | 200 | Pcs | *(Custom)* | 7 Hari | 0 | 0 | **200** |
+| **MAT-05** | Baut / Screw Set | 4 | 2.500 | Pcs | *(Custom)* | 7 Hari | 100 | 0 | **2.600** |
 
 ---
 
-## 📚 Studi Kasus 2: Paket Kurikulum & Modul Ajar TIK Sekolah Dasar
+## 💻 Sistem Material Requirement Planning (MRP) & ROP
 
-### 1. Overview & Latar Belakang
-Mengajarkan Informatika kepada siswa Sekolah Dasar (Fase A dan Fase C) membutuhkan pendekatan adaptif. Di banyak sekolah, keterbatasan jumlah perangkat komputer menjadi tantangan utama. Oleh karena itu, dirancang modul ajar berbasis **Computer Science (CS) Unplugged** dan *Problem-Based Learning* (PBL).
+Sistem perhitungan otomatis yang menghubungkan **Rencana Target Produksi** dengan keterisian stok akhir gudang, *Reorder Point* (ROP), dan kebutuhan rilis *Purchase Order* (PO)[cite: 1]:
 
-### 2. Struktur Modul & Metode Pembelajaran
-* **Fase A (Kelas 1):** Pengenalan Konsep Simbol & Logika Pengelompokan.
-* **Fase C (Kelas 5):** Bab Analisis Data & Visualisasi (Sensus Hobi / Survei Lingkungan).
-* **Pendekatan Deep Learning:**
-  * *Unplugged Informatics:* Siswa belajar logika algoritma, pencatatan turus/tally mark, dan pengelompokan data menggunakan kertas, kartu, dan aktivitas fisik tanpa tergantung pada layar komputer.
-  * *Plugged Digitalization:* Demonstrasi digitalisasi data langsung ke lembar kerja Excel/PowerPoint untuk menampilkan grafik batang otomatis secara real-time.
+> **🎯 Target Produksi Simulasi:** 300 Unit Router X-100
 
-### 3. Komponen Lembar Kerja Peserta Didik (LKPD)
-1. **Aktivitas Wawancara (Detektif Data):** Siswa bergerak secara interaktif (kinestetik) untuk mengumpulkan data dari 10 teman sekelas.
-2. **Pengolahan Data Manual:** Mengubah data acak menjadi tabel turus (*tally mark*).
-3. **Visualisasi Grafik:** Menggambar grafik batang sederhana secara manual sebelum dikonversi ke format digital.
-
-### 4. Rubrik Asesmen & Evaluasi
-* **Asesmen Diagnostik:** Pengukuran emosional dan kognitif awal siswa.
-* **Asesmen Formatif:** Observasi dinamika kelompok dan kecermatan pencatatan data.
-* **Asesmen Sumatif:** Tes pemahaman konseptual dan penyusunan kalimat dari data.
+| Kode Material | Nama Material | Kebutuhan Produksi | Stok Gudang | Safety Stock | Status Stok | Jumlah Beli (PO) | Lead Time | Reorder Point (ROP) | Tgl Order | Total Biaya |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **MAT-01** | Casing Plastik | 300 | 500 | 100 | 🟢 AMAN | 0 | 7 Hari | 170 | Aman | Rp 0 |
+| **MAT-02** | Main PCB Board | 300 | 350 | 100 | 🔴 BAHAYA | **50** | 7 Hari | 170 | TODAY() | Rp 0 |
+| **MAT-03** | Antena Wi-Fi | 600 | 800 | 100 | 🟢 AMAN | 0 | 7 Hari | 240 | Aman | Rp 0 |
+| **MAT-04** | Power Adapter | 300 | 200 | 100 | 🔴 BAHAYA | **200** | 7 Hari | 170 | TODAY() | Rp 0 |
+| **MAT-05** | Baut / Screw Set | 1.200 | 2.600 | 100 | 🟢 AMAN | 0 | 7 Hari | 380 | Aman | Rp 0 |
 
 ---
 
-## 📑 Studi Kasus 3: Operasional Administrasi & Validasi Berkas
+## ⚙️ Formula Kunci & Logika Spreadsheet
 
-### 1. Overview & Latar Belakang
-Dalam lingkungan kerja administrasi skala besar (seperti di BPN Karawang via agency tata.id), validasi dokumen dan pengarsipan yang tepat merupakan kunci keamanan dan kepatuhan hukum (*legal compliance*).
-
-### 2. Workflow & Standar Operasional Prosedur (SOP)
-
-| Tahap | Aktivitas Utama | Deskripsi & Target | Media / Tool |
-| :---: | :--- | :--- | :--- |
-| **01** | **📥 Penerimaan Berkas** | Penyerahan fisik berkas & pencatatan registrasi awal | Logbook / Google Sheets |
-| **02** | **🔍 Verifikasi & Validasi** | Pemeriksaan keabsahan stempel, tanda tangan & data legal | Checklist SOP Validasi |
-| **03** | **💻 Input Data Digital** | Merekam meta-data dokumen ke dalam basis data | Aplikasi BPN / Excel |
-| **04** | **🏷️ Pengkodean & Barcode** | Penempelan label identifikasi unik/barcode pada folder | Printer Barcode & Label |
-| **05** | **📁 Pengarsipan Ganda** | Penyimpanan fisik (Warkah) & backup data ke cloud | Rak Arsip & Cloud Storage |
-
-> **⚠️ Alur Penanganan Kendala (Retur/Revisi):** 
-> Apabila pada **Tahap 02** berkas dinyatakan *tidak lengkap*, berkas akan dikembalikan ke pemohon beserta lembar *Checklist Kekurangan* untuk dilengkapi terlebih dahulu sebelum masuk ke **Tahap 03**.
-
-### 3. Key Achievements & Best Practices
-* **Peningkatan Efisiensi Pengarsipan:** Mengimplementasikan penataan kode indeks yang sistematis sehingga waktu pencarian berkas (*retrieval time*) berkurang dari 15 menit menjadi kurang dari 3 menit.
-* **Akurasi Data:** Memvalidasi ribuan lembar dokumen pertanahan dengan tingkat kesalahan (*error rate*) di bawah 0.1%.
-* **Kerapihan Logbook Digital:** Memelihara *Audit Trail* dan logbook penyerahan berkas harian menggunakan Google Workspace / Excel.
-
+1. **Sinkronisasi Stok Akhir Gudang (Sheet BOM):**
+   ```excel
+   =D5 + I5 - J5
 ---
 
 ## 📞 Ringkasan Ringkas & Kontak
