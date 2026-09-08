@@ -86,9 +86,10 @@
 
 | Bidang | Judul Portofolio | Output & Dokumentasi |
 | :--- | :--- | :--- |
-| 📊 **PPIC & Operasional** | Case Study: Production Planning & Inventory Control | [📖 Lihat Detail Studi Kasus](PORTFOLIO#-studi-kasus-1-production-planning--inventory-control-ppic) |
-| 📚 **Pendidikan TIK** | Paket Kurikulum & Modul Ajar TIK Sekolah Dasar | [📖 Lihat Detail Studi Kasus](PORTFOLIO#-studi-kasus-2-paket-kurikulum--modul-ajar-tik-sekolah-dasar) |
-| 📁 **Administrasi** | Standar Validasi Berkas & Kearsipan Digital | [📖 Lihat Detail Studi Kasus](PORTFOLIO#-studi-kasus-3-operasional-administrasi--validasi-berkas) |
+| 📊 **PPIC & Operasional** | Case Study: Production Planning & Inventory Control | [📖 Lihat Detail Studi Kasus](PORTFOLIO_DETAIL.md#-studi-kasus-1-production-planning--inventory-control-ppic) |
+| 📚 **Pendidikan TIK** | Paket Kurikulum & Modul Ajar TIK Sekolah Dasar | [📖 Lihat Detail Studi Kasus](PORTFOLIO_DETAIL.md#-studi-kasus-2-paket-kurikulum--modul-ajar-tik-sekolah-dasar) |
+| 📁 **Administrasi** | Standar Validasi Berkas & Kearsipan Digital | [📖 Lihat Detail Studi Kasus](PORTFOLIO_DETAIL.md#-studi-kasus-3-operasional-administrasi--validasi-berkas) |
+
 
 ## 📈 GitHub Overview
 
