@@ -73,7 +73,22 @@ Dalam lingkungan kerja administrasi skala besar (seperti di BPN Karawang via age
 
 ### 2. Workflow & Standar Operasional Prosedur (SOP)
 ```
-[Penerimaan Berkas] ➔ [Pemeriksaan Kelengkapan] ➔ [Verifikasi Data Digital] ➔ [Pemberian Index/Barcode] ➔ [Arsip Physical & Cloud]
+```mermaid
+graph LR
+    A["📥 1. Penerimaan"] --> B["🔍 2. Pemeriksaan"]
+    B --> C{"⚡ Lolos QC?"}
+    C -- Ya --> D["💻 3. Input Digital"]
+    C -- Tidak --> E["⚠️ Retur / Revisi"]
+    D --> F["🏷️ 4. Pengkodean & Barcode"]
+    F --> G["📁 5. Pengarsipan"]
+
+    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style B fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style C fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style D fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style E fill:#ffebee,stroke:#d32f2f,stroke-width:2px
+    style F fill:#e0f2f1,stroke:#00796b,stroke-width:2px
+    style G fill:#eceff1,stroke:#455a64,stroke-width:2px
 ```
 
 ### 3. Key Achievements & Best Practices
