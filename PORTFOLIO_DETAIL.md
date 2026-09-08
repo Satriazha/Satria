@@ -89,4 +89,4 @@ Dokumen ini menunjukkan perpaduan keahlian teknis TIK, logika sistematis dalam o
 
 * **Penulis:** Satria Dawas Zhalifunas, S.Kom
 * **Lokasi:** Karawang, Jawa Barat, Indonesia
-* **Kontak / LinkedIn:** [Profil LinkedIn](https://linkedin.com) | Email: `satria.dawas@example.com`
+* **Kontak / LinkedIn:** [Profil LinkedIn](https://linkedin.com) | Email: satriazhalifunas@gmail.com
