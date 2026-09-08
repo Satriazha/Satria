@@ -45,6 +45,10 @@ Sistem perhitungan otomatis yang menghubungkan **Rencana Target Produksi** denga
 1. **Sinkronisasi Stok Akhir Gudang (Sheet BOM):**
    ```excel
    =D5 + I5 - J5
+2.**Perhitungan Otomatis Kebutuhan Produksi**
+   =$B$1 * VLOOKUP(A5; 'BOM'!$A$5:$J$9; 3; FALSE)
+3.**Logika Alert Status Stok**
+=IF((D5-C5)<E5; "🔴 "🟢 ## ### $$\text{ROP}="\text{Safety" $100\%$ & 'BOM'!$A$5:$J$9; ((C5/30) (*IN*) (*OUT*) (*center-aligned*) (ROP) (merah) * **Kalkulasi **Mengeliminasi **Otomatisasi **Proteksi **Respon *Reorder *syntax + --- / 4. 5. 7) 7; ; AMAN") BAHAYA"; BOM. Benefits Blok Cepat Dihasilkan Error:** Excel FALSE)="0);" FALSE)); Fluktuasi GitHub: H5) Harga Human Impact Kolom Kosong:** LaTeX. Laporan Lead Master Mutasi:** Operational PO Penggunaan Perhitungan Persamaan Perubahan Point Point* Produksi}}{30} ROP:** Reorder Stock} Tabel Tampilan Target:** Terhadap Time Time} VLOOKUP(A5; \frac{\text{Kebutuhan \left( \right)$$ \text{Lead \times `B1` `SUMIF` ``` ```excel="IFERROR(IF(OR(VLOOKUP(A5;" abu-abu akan barang berjalan berwarna cell dalam dan dengan di dibeli. dinamis dipelajari dirender fungsi highlighting* input jumlah ke kebutuhan keluar kode kolom komponen kritis langsung manual. masuk matematis memuluskan menggunakan mengodekan mudah oleh otomatis pada penataan pencatatan produksi rapi recruiter. rilis rumus sangat secara sehingga status status. tanggal tanpa target teks terformat terpusat transaksi wajib yang 📈>
 ---
 
 ## 📞 Ringkasan Ringkas & Kontak
