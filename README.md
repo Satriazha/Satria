@@ -84,13 +84,11 @@
 
 ## 📁 Featured Portfolios
 
-| Category | Portfolio Highlight | Key Elements |
+| Bidang | Judul Portofolio | Output & Dokumentasi |
 | :--- | :--- | :--- |
-| 📊 **PPIC & Admin** | Case Study: Production Planning & Inventory Control | Demand Forecasting, Stock Tracking, Purchasing |
-| 📚 **Education** | Primary Informatics (TIK) Curriculum Package | Modul Ajar, Worksheets (LKPD), CS Unplugged Cards |
-| 📁 **Operations** | Archiving & Document Validation Standard | Archiving Workflows, Data Verification Logs |
-
----
+| 📊 **PPIC & Operasional** | Case Study: Production Planning & Inventory Control | [📖 Lihat Detail Studi Kasus](PORTFOLIO#-studi-kasus-1-production-planning--inventory-control-ppic) |
+| 📚 **Pendidikan TIK** | Paket Kurikulum & Modul Ajar TIK Sekolah Dasar | [📖 Lihat Detail Studi Kasus](PORTFOLIO#-studi-kasus-2-paket-kurikulum--modul-ajar-tik-sekolah-dasar) |
+| 📁 **Administrasi** | Standar Validasi Berkas & Kearsipan Digital | [📖 Lihat Detail Studi Kasus](PORTFOLIO#-studi-kasus-3-operasional-administrasi--validasi-berkas) |
 
 ## 📈 GitHub Overview
 
